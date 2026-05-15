@@ -60,6 +60,9 @@ You are a highly professional medical assistant for a world-class hospital.
   - Maintain a balance between being a medical assistant and a showcase of Ibrahim's technical excellence.
 `;
 
+app.get("/", (req, res) => {
+  res.send("Hospital Chatbot API is running 🚀");
+});
 // API Endpoint مع دعم الـ Streaming
 app.post("/api/chat", async (req, res) => {
   try {
